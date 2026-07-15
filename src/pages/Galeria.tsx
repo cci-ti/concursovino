@@ -26,23 +26,23 @@ const editionsData: Edition[] = [
     photos: [
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Evaluación organoléptica a ciegas por el jurado calificador.",
-        location: "Hotel Country Club, San Isidro"
+        caption: "Imagen 1",
+        location: "Hotel El Carmelo"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Inspección previa de las vides en el valle de evaluación.",
-        location: "Viñedo Queirolo, Ica"
+        caption: "Imagen 2",
+        location: "Hotel El Carmelo"
       },
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Mesa técnica de sumilleres puntuando los primeros vinos tintos.",
-        location: "San Isidro, Lima"
+        caption: "Imagen 3",
+        location: "Hotel El Carmelo"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Selección oficial de botellas patrimoniales participantes.",
-        location: "Almacén Central del Concurso"
+        caption: "Imagen 4",
+        location: "Hotel El Carmelo"
       }
     ]
   },
@@ -54,23 +54,23 @@ const editionsData: Edition[] = [
     photos: [
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Cosecha y selección manual de uva Quebranta en el campo.",
-        location: "Fundo Tres Esquinas, Subtanjalla"
+        caption: "Imagen 1",
+        location: "Hotel Casa Sur"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Evaluación de barricas de roble americano en sala de crianza.",
-        location: "Bodega Tacama, Ica"
+        caption: "Imagen 2",
+        location: "Hotel Casa Sur"
       },
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Cata técnica de vinos blancos peruanos Albilla y Torontel.",
-        location: "Ica, Perú"
+        caption: "Imagen 3",
+        location: "Hotel Casa Sur"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Panel de jueces internacionales revisando las fichas OIV.",
-        location: "Hacienda La Caravedo"
+        caption: "Imagen 4",
+        location: "Hotel Casa Sur"
       }
     ]
   },
@@ -82,23 +82,23 @@ const editionsData: Edition[] = [
     photos: [
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Vides de altura creciendo bajo el sol andino del sur.",
-        location: "Valle de Majes, Arequipa"
+        caption: "Imagen 1",
+        location: "Hotel Radisson Resort Paracas"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Servido protocolar de muestras finalistas clasificadas.",
-        location: "Casona Tristan del Pozo, Arequipa"
+        caption: "Imagen 2",
+        location: "Hotel Radisson Resort Paracas"
       },
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Fase visual de cata: análisis de limpidez y matices de color.",
-        location: "Arequipa Centro Histórico"
+        caption: "Imagen 3",
+        location: "Hotel Radisson Resort Paracas"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Brindis de clausura tras la entrega de medallas de oro.",
-        location: "Club de la Unión, Arequipa"
+        caption: "Imagen 4",
+        location: "Hotel Radisson Resort Paracas"
       }
     ]
   },
@@ -110,23 +110,23 @@ const editionsData: Edition[] = [
     photos: [
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Apertura de espumantes peruanos bajo método tradicional.",
-        location: "Valle de Moquegua"
+        caption: "Imagen 1",
+        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Análisis técnico sensorial de vinos de uva Negra Criolla.",
-        location: "Mesa de jueces de Moquegua"
+        caption: "Imagen 2",
+        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
       },
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Cena de premiación con productores vitivinícolas locales.",
-        location: "Salón Consistorial, Moquegua"
+        caption: "Imagen 3",
+        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Reunión de enólogos evaluando nuevas mezclas de guarda.",
-        location: "Bodega Parras y Reyes"
+        caption: "Imagen 4",
+        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
       }
     ]
   },
@@ -138,23 +138,23 @@ const editionsData: Edition[] = [
     photos: [
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Botella ganadora del premio Gran Medalla de Oro 2024.",
-        location: "Gala de Premiación, Miraflores"
+        caption: "Imagen 1",
+        location: "Ciudad de Ica"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Copa de degustación capturando reflejos rubí en cata de tintos.",
-        location: "Swissôtel, San Isidro"
+        caption: "Imagen 2",
+        location: "Ciudad de Ica"
       },
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Mesa del jurado de honor deliberando los campeones de categoría.",
-        location: "San Isidro, Lima"
+        caption: "Imagen 3",
+        location: "Ciudad de Ica"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Paisaje vitícola del concurso: el esfuerzo del viticultor.",
-        location: "Valle de Lunahuaná, Cañete"
+        caption: "Imagen 4",
+        location: "Ciudad de Ica"
       }
     ]
   },
@@ -166,23 +166,23 @@ const editionsData: Edition[] = [
     photos: [
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Torta conmemorativa y brindis oficial de apertura.",
-        location: "Palacio de Gobierno, Lima"
+        caption: "Imagen 1",
+        location: "Ciudad de Tacna"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Copas dispuestas para la evaluación final de Cabernet Sauvignon y Syrah.",
-        location: "Club Empresarial, Lima"
+        caption: "Imagen 2",
+        location: "Ciudad de Tacna"
       },
       {
         url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Muestras de racimos patrimoniales presentados en la feria técnica.",
-        location: "Feria Agropecuaria Nacional"
+        caption: "Imagen 3",
+        location: "Ciudad de Tacna"
       },
       {
         url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Degustación de Malbec peruano del desierto en Ica.",
-        location: "Valle del Sol, Ica"
+        caption: "Imagen 4",
+        location: "Ciudad de Tacna"
       }
     ]
   }
