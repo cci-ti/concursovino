@@ -45,7 +45,7 @@ export const Inicio: React.FC = () => {
 
         <div className="hero-ornament">Perú · Vino · Tradición</div>
         <h1 className="hero-title">
-          I Concurso Nacional<br />
+          VII Concurso Nacional<br />
           del Vino <span className="highlight-circle-container">
             Peruano
             <svg className="circle-svg" viewBox="0 0 100 40" preserveAspectRatio="none">
@@ -53,7 +53,7 @@ export const Inicio: React.FC = () => {
             </svg>
           </span>
         </h1>
-        <p className="hero-sub">Realizado en la ciudad de Ica.</p>
+        <p className="hero-sub">Segundo concurso internacional de vinos de origen y patrimonio.</p>
         <Link to="/contacto" className="hero-contact-link-container">
           Contáctanos
           <svg className="underline-svg" viewBox="0 0 100 10" preserveAspectRatio="none">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Trophy, TrendingUp, Globe } from 'lucide-react';
 
 export const Concurso: React.FC = () => {
   return (
@@ -136,17 +137,23 @@ export const Concurso: React.FC = () => {
           <div className="divider-line"></div>
           <div className="por-que-grid">
             <div className="por-que-card reveal">
-              <div className="icon">🏆</div>
+              <div className="icon">
+                <Trophy size={36} strokeWidth={1.5} />
+              </div>
               <h4>Evaluación a Ciegas</h4>
               <p>Es la plataforma donde las mejores bodegas del país demuestran la calidad de sus vinos ante un jurado de prestigio nacional e internacional, mediante una evaluación técnica, imparcial y a ciegas.</p>
             </div>
             <div className="por-que-card reveal">
-              <div className="icon">📈</div>
+              <div className="icon">
+                <TrendingUp size={36} strokeWidth={1.5} />
+              </div>
               <h4>Fortalecer tu Marca</h4>
               <p>Participar significa obtener un reconocimiento que genera confianza en el consumidor, te ayuda a diferenciarte en el mercado y a formar parte del certamen que impulsa la excelencia de la vitivinicultura peruana.</p>
             </div>
             <div className="por-que-card reveal">
-              <div className="icon">🌎</div>
+              <div className="icon">
+                <Globe size={36} strokeWidth={1.5} />
+              </div>
               <h4>Internacionalización</h4>
               <p>El concurso da un paso hacia la internacionalización con el objetivo de alcanzar los más altos estándares de la industria y el reconocimiento de la OIV, consolidando al Perú como un referente en el mundo del vino.</p>
             </div>

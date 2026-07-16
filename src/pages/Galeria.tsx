@@ -279,7 +279,6 @@ export const Galeria: React.FC = () => {
                       transition={{ type: "spring", stiffness: 350, damping: 28 }}
                     />
                   )}
-                  <span style={{ marginRight: '0.35rem' }}>{ed.icon}</span>
                   {ed.id}
                 </button>
               );

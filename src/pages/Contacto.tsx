@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 export const Contacto: React.FC = () => {
   const [name, setName] = useState('');
@@ -55,7 +56,9 @@ export const Contacto: React.FC = () => {
             <p>Para consultas sobre inscripciones, bases técnicas del reglamento, entrega de muestras o cualquier aspecto organizativo del concurso, por favor comunícate con nuestro equipo directivo.</p>
 
             <div className="contact-item">
-              <span className="ci">📞</span>
+              <span className="ci">
+                <Phone size={20} strokeWidth={1.8} />
+              </span>
               <div>
                 <strong>Teléfonos de contacto:</strong><br />
                 <a href="tel:968183971">968 183 971</a><br />
@@ -64,7 +67,9 @@ export const Contacto: React.FC = () => {
             </div>
 
             <div className="contact-item">
-              <span className="ci">✉️</span>
+              <span className="ci">
+                <Mail size={20} strokeWidth={1.8} />
+              </span>
               <div>
                 <strong>Correos electrónicos:</strong><br />
                 <a href="mailto:imagen@camaraica.org.pe">imagen@camaraica.org.pe</a><br />
@@ -73,7 +78,9 @@ export const Contacto: React.FC = () => {
             </div>
 
             <div className="contact-item">
-              <span className="ci">📍</span>
+              <span className="ci">
+                <MapPin size={20} strokeWidth={1.8} />
+              </span>
               <div>
                 <strong>Sede organizadora:</strong><br />
                 Cámara de Comercio de Ica<br />
