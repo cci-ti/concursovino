@@ -18,7 +18,7 @@ export const Navbar: React.FC = () => {
         <div className="nav-logo">
           <img src="https://camaraica.org.pe/wp-content/uploads/2026/07/only_logo-removebg-preview.webp" alt="Concurso Nacional del Vino Peruano" className="nav-logo-img" />
           <div className="nav-logo-text">
-            Concurso Nacional del Vino Peruano
+            VII Concurso Nacional del Vino Peruano
             <small>Cámara de Comercio de Ica</small>
           </div>
         </div>

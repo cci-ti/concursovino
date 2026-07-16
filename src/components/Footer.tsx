@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
         Concurso Nacional del Vino Peruano<sup>®</sup>
       </div>
       <p>
-        Cámara de Comercio, Industria y Turismo de Ica ·{' '}
+        Cámara de Comercio de Ica ·{' '}
         <a href="mailto:imagen@camaraica.org.pe">imagen@camaraica.org.pe</a>
       </p>
       <div className="footer-socials" style={{ display: 'flex', justifyContent: 'center', gap: '1.2rem', marginTop: '1.2rem', marginBottom: '0.8rem' }}>
