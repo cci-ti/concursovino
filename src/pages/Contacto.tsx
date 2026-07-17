@@ -10,7 +10,10 @@ export const Contacto: React.FC = () => {
   const [statusMsg, setStatusMsg] = useState('');
   const [statusType, setStatusType] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Configuración de la URL de n8n. Puedes editarla aquí o definir VITE_N8N_WEBHOOK_URL en tu archivo .env
+  const N8N_WEBHOOK_URL = import.meta.env.VITE_N8N_WEBHOOK_URL || 'https://n8n-n8n.ricijy.easypanel.host/webhook/concursovino';
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     if (!name || !email || !message) {
@@ -19,23 +22,42 @@ export const Contacto: React.FC = () => {
       return;
     }
 
-    setStatusMsg('Preparando envío...');
+    setStatusMsg('Enviando mensaje...');
     setStatusType('loading');
 
-    const emailSubject = subject || `Contacto Web - Concurso Nacional del Vino`;
-    const emailBody = `Nombre completo: ${name}\nCorreo de contacto: ${email}\n\nMensaje:\n${message}`;
+    try {
+      const response = await fetch(N8N_WEBHOOK_URL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          subject: subject || 'Contacto Web - Concurso Nacional del Vino',
+          message,
+        }),
+      });
 
-    // Redirect to mailto link
-    window.location.href = `mailto:imagen@camaraica.org.pe?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+      if (response.ok) {
+        setStatusMsg('¡Tu mensaje ha sido enviado con éxito! Nos comunicaremos contigo pronto.');
+        setStatusType('success');
 
-    setStatusMsg('¡Formulario procesado!');
-    setStatusType('success');
-
-    setName('');
-    setEmail('');
-    setSubject('');
-    setMessage('');
+        setName('');
+        setEmail('');
+        setSubject('');
+        setMessage('');
+      } else {
+        setStatusMsg('Hubo un inconveniente al procesar el envío. Por favor, inténtalo de nuevo.');
+        setStatusType('error');
+      }
+    } catch (error) {
+      console.error('Error al enviar a n8n:', error);
+      setStatusMsg('Hubo un error de conexión. Revisa tu conexión a internet.');
+      setStatusType('error');
+    }
   };
+
 
   const getMsgStyle = () => {
     if (statusType === 'idle') return { display: 'none' };
