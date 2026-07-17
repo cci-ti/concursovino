@@ -17,8 +17,8 @@ export const Contacto: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!name || !email || !message) {
-      setStatusMsg('Por favor, completa todos los campos requeridos (*).');
+    if (!name || !email || !phone || !subject || !message) {
+      setStatusMsg('Por favor, completa todos los campos del formulario.');
       setStatusType('error');
       return;
     }
@@ -138,21 +138,23 @@ export const Contacto: React.FC = () => {
                 />
               </div>
               <div className="field">
-                <label>Teléfono / Celular</label>
+                <label>Teléfono / Celular *</label>
                 <input
                   type="tel"
                   placeholder="Ej: +51 999 999 999"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
+                  required
                 />
               </div>
               <div className="field">
-                <label>Asunto</label>
+                <label>Asunto *</label>
                 <input
                   type="text"
                   placeholder="Ej: Consulta sobre inscripción"
                   value={subject}
                   onChange={(e) => setSubject(e.target.value)}
+                  required
                 />
               </div>
               <div className="field">
