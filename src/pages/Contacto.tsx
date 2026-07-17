@@ -4,6 +4,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 export const Contacto: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
@@ -34,6 +35,7 @@ export const Contacto: React.FC = () => {
         body: JSON.stringify({
           name,
           email,
+          phone,
           subject: subject || 'Contacto Web - Concurso Nacional del Vino',
           message,
         }),
@@ -45,6 +47,7 @@ export const Contacto: React.FC = () => {
 
         setName('');
         setEmail('');
+        setPhone('');
         setSubject('');
         setMessage('');
       } else {
@@ -132,6 +135,15 @@ export const Contacto: React.FC = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required
+                />
+              </div>
+              <div className="field">
+                <label>Teléfono / Celular</label>
+                <input
+                  type="tel"
+                  placeholder="Ej: +51 999 999 999"
+                  value={phone}
+                  onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
               <div className="field">
