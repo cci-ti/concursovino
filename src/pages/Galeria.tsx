@@ -5,8 +5,8 @@ import { Maximize2, X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface Photo {
   url: string;
-  caption: string;
-  location: string;
+  caption?: string;
+  location?: string;
 }
 
 interface Edition {
@@ -52,26 +52,13 @@ const editionsData: Edition[] = [
     description: "Celebrada en el corazón vitivinícola del país, destacando el resurgimiento de variedades criollas patrimoniales y piscos de guarda.",
     icon: "🍇",
     photos: [
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 1",
-        location: "Hotel Casa Sur"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 2",
-        location: "Hotel Casa Sur"
-      },
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 3",
-        location: "Hotel Casa Sur"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 4",
-        location: "Hotel Casa Sur"
-      }
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2021-II.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2021-II-2.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2021-II-3.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2021-II-Con-exito-se-realizo-el-II-Concurso-Nacional-del-Vino-Peruano-en-la-ciudad-de-Ica-1.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2021-II-Con-exito-se-realizo-el-II-Concurso-Nacional-del-Vino-Peruano-en-la-ciudad-de-Ica-2.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/CONVIP2021-edicion-2021-II.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2021-II-Sr.-Vila.webp" }
     ]
   },
   {
@@ -80,26 +67,23 @@ const editionsData: Edition[] = [
     description: "Los valles de altura y de desierto expusieron vinos con notas minerales y acidez vibrante en el marco del majestuoso cañón del Colca.",
     icon: "✨",
     photos: [
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 1",
-        location: "Hotel Radisson Resort Paracas"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 2",
-        location: "Hotel Radisson Resort Paracas"
-      },
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 3",
-        location: "Hotel Radisson Resort Paracas"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 4",
-        location: "Hotel Radisson Resort Paracas"
-      }
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-2.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-3.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-4.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-5.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-6.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-7.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-8.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-9.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-10.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-11.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-12.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-13.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-JURADOS-1.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-JURADOS-2.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-JURADOS-3.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III-JURADOS-4.webp" }
     ]
   },
   {
@@ -108,26 +92,37 @@ const editionsData: Edition[] = [
     description: "Puesta en valor de la ruta del vino de Moquegua, uniendo bodegas tradicionales y bodegas modernas de pequeña escala artesanal.",
     icon: "🍾",
     photos: [
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 1",
-        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 2",
-        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
-      },
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 3",
-        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 4",
-        location: "Universidad San Ignacio de Loyola (USIL), La Molina"
-      }
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-1-scaled.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-2023-IV-3-scaled.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv2023_-7-scaled.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-2023-JOSE-2-scaled.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-2023-SR.ALAN-4-scaled.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-2023-SRT.CLAUDIA-5-scaled.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-2023_-6-scaled.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-8.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-9.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-10.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-11.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-12.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-13.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-15.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-16.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-17.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-19.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-20.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-21.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-22.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-23.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-24.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-25.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-26.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-27.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-28.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-29.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-30.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-31.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-32.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-34.webp" }
     ]
   },
   {
@@ -136,26 +131,32 @@ const editionsData: Edition[] = [
     description: "Edición con récord de muestras y participación de más de 65 bodegas de Ica, Lima, Arequipa, Moquegua y Tacna.",
     icon: "🥇",
     photos: [
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 1",
-        location: "Ciudad de Ica"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 2",
-        location: "Ciudad de Ica"
-      },
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 3",
-        location: "Ciudad de Ica"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 4",
-        location: "Ciudad de Ica"
-      }
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-2.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-3.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-4.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-5.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-6.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-7.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-8.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-9.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-10.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-11.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-12.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-13.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-14.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-15.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-16.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-17.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-18.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-19.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-20.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-21.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-22.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-23.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-24.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-25.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v-26.webp" }
     ]
   },
   {
@@ -164,26 +165,20 @@ const editionsData: Edition[] = [
     description: "La edición conmemorativa que consolida el prestigio de la vitivinicultura peruana a nivel global, con la participación de catadores del extranjero.",
     icon: "🎉",
     photos: [
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 1",
-        location: "Ciudad de Tacna"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 2",
-        location: "Ciudad de Tacna"
-      },
-      {
-        url: "https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp",
-        caption: "Imagen 3",
-        location: "Ciudad de Tacna"
-      },
-      {
-        url: "https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png",
-        caption: "Imagen 4",
-        location: "Ciudad de Tacna"
-      }
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-1.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-2.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-3.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-4.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-5.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-6.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-7.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-8.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-9.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-10.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-11.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-12.webp" },
+      { url: "https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2025-vi-13.webp" }
     ]
   }
 ];
@@ -338,7 +333,7 @@ export const Galeria: React.FC = () => {
               <ChevronRight size={22} />
             </button>
 
-            <img src={activeEdition.photos[currentPhotoIdx].url} alt={activeEdition.photos[currentPhotoIdx].caption} />
+            <img src={activeEdition.photos[currentPhotoIdx].url} alt="" />
           </div>
 
           {/* Next Card (Right Peek) */}
@@ -359,12 +354,6 @@ export const Galeria: React.FC = () => {
           transition={{ duration: 0.3 }}
           className="gallery-3d-info-container"
         >
-          <div className="gallery-carousel-caption">
-            <h4>{activeEdition.photos[currentPhotoIdx].caption}</h4>
-            <p>{activeEdition.photos[currentPhotoIdx].location}</p>
-            <span>Edición {activeEdition.id} · Concurso Nacional</span>
-          </div>
-
           {/* Interactive Indicator dots */}
           <div className="gallery-carousel-indicators" style={{ justifyContent: 'center', marginTop: '1.2rem' }}>
             {activeEdition.photos.map((_, idx) => (
@@ -429,17 +418,10 @@ export const Galeria: React.FC = () => {
               >
                 <img
                   src={activeEdition.photos[currentPhotoIdx].url}
-                  alt={activeEdition.photos[currentPhotoIdx].caption}
+                  alt=""
                   className="lightbox-img"
                 />
               </motion.div>
-
-              {/* Photo Caption Box */}
-              <div className="lightbox-caption-box">
-                <h3>{activeEdition.photos[currentPhotoIdx].caption}</h3>
-                <p>{activeEdition.photos[currentPhotoIdx].location}</p>
-                <span>Edición {activeEdition.id} · Concurso Nacional</span>
-              </div>
             </div>
           </motion.div>,
           document.body
