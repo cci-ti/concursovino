@@ -76,12 +76,29 @@ const juecesConcurso4: Juez[] = [
   { nombre: 'Martin Torre de la Gala', cargo: 'Vitivinicultor' }
 ];
 
+const juecesConcurso6: Juez[] = [
+  { nombre: 'Rodrigo Avilés', cargo: 'Jurado - Mesa 1' },
+  { nombre: 'Rosario Olivas', cargo: 'Jurado - Mesa 1' },
+  { nombre: 'Jonatan Serrano', cargo: 'Jurado - Mesa 1' },
+  { nombre: 'Mariana Aguilar', cargo: 'Jurado - Mesa 1' },
+  { nombre: 'Alexander Sanabria', cargo: 'Jurado - Mesa 2' },
+  { nombre: 'Claudio Martin', cargo: 'Jurado - Mesa 2' },
+  { nombre: 'Maria Elena Cárdenas', cargo: 'Jurado - Mesa 2' },
+  { nombre: 'Kelvin Chamorro', cargo: 'Jurado - Mesa 2' },
+  { nombre: 'Jesús Castro', cargo: 'Jurado - Mesa 3' },
+  { nombre: 'Danny Villanueva', cargo: 'Jurado - Mesa 3' },
+  { nombre: 'Maria Alejandra Ramos', cargo: 'Jurado - Mesa 3' },
+  { nombre: 'Nuria Fernández', cargo: 'Jurado - Mesa 3' },
+  { nombre: 'Luis Hernández', cargo: 'Jurado - Mesa 3' }
+];
+
 export const Jueces: React.FC = () => {
   // Independent search states
   const [searchQuery1, setSearchQuery1] = useState('');
   const [searchQuery2, setSearchQuery2] = useState('');
   const [searchQuery3, setSearchQuery3] = useState('');
   const [searchQuery4, setSearchQuery4] = useState('');
+  const [searchQuery6, setSearchQuery6] = useState('');
 
   // Filtering
   const filtered1 = juecesConcurso1.filter(
@@ -106,6 +123,12 @@ export const Jueces: React.FC = () => {
     (j) =>
       j.nombre.toLowerCase().includes(searchQuery4.toLowerCase()) ||
       j.cargo.toLowerCase().includes(searchQuery4.toLowerCase())
+  );
+
+  const filtered6 = juecesConcurso6.filter(
+    (j) =>
+      j.nombre.toLowerCase().includes(searchQuery6.toLowerCase()) ||
+      j.cargo.toLowerCase().includes(searchQuery6.toLowerCase())
   );
 
   return (
@@ -262,6 +285,53 @@ export const Jueces: React.FC = () => {
                   <tbody>
                     {filtered4.length > 0 ? (
                       filtered4.map((j, idx) => (
+                        <tr key={idx}>
+                          <td>{j.nombre}</td>
+                          <td>{j.cargo || ''}</td>
+                        </tr>
+                      ))
+                    ) : (
+                      <tr>
+                        <td colSpan={2} className="jueces-no-results">No se encontraron jueces.</td>
+                      </tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* V CONCURSO */}
+            <div className="jueces-table-section">
+              <h4 className="jueces-table-title">V Concurso Nacional del Vino Peruano (2024)</h4>
+              <p style={{ fontSize: '0.92rem', color: 'var(--text-soft)', fontStyle: 'italic', padding: '2rem 1.5rem', textAlign: 'center', lineHeight: '1.6', background: '#fcf8f8', borderRadius: '4px', border: '1px dashed var(--line)' }}>
+                El jurado de esta quinta edición estuvo conformado por un panel de 12 distinguidos jueces nacionales e internacionales. La relación detallada se publicará próximamente.
+              </p>
+            </div>
+
+            {/* VI CONCURSO */}
+            <div className="jueces-table-section">
+              <h4 className="jueces-table-title">VI Concurso Nacional del Vino Peruano (2025)</h4>
+              <div className="table-search-row">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  className="table-search-input"
+                  value={searchQuery6}
+                  onChange={(e) => setSearchQuery6(e.target.value)}
+                />
+                <button className="table-search-btn" onClick={() => setSearchQuery6('')}>-</button>
+              </div>
+              <div className="jueces-table-wrap">
+                <table className="jueces-table">
+                  <thead>
+                    <tr>
+                      <th>Nombres</th>
+                      <th>Profesión / Mesa</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {filtered6.length > 0 ? (
+                      filtered6.map((j, idx) => (
                         <tr key={idx}>
                           <td>{j.nombre}</td>
                           <td>{j.cargo || ''}</td>

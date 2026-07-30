@@ -44,7 +44,9 @@ export const Historico: React.FC = () => {
             <div className="edicion-stat"><b>+55</b><small>Premiados</small></div>
           </div>
           <div className="edicion-body">
-            <p>El Concurso Nacional del Vino Peruano reunió en el Hotel El Carmelo de Ica a destacados productores y especialistas del sector vitivinícola para una nueva edición dedicada a reconocer la calidad y excelencia de los vinos del país. El certamen fue organizado de manera conjunta por CITEagroindustrial, la Dirección Regional de Producción y la Cámara de Comercio de Ica, consolidando una alianza estratégica en favor del desarrollo de la industria vitivinícola peruana.</p>
+            <p>Del 9 al 11 de diciembre de 2020, el Concurso Nacional del Vino Peruano reunió en el Hotel El Carmelo de Ica a destacados productores y especialistas del sector vitivinícola para una nueva edición dedicada a reconocer la calidad y excelencia de los vinos del país.</p>
+            <p>El certamen fue organizado de manera conjunta por CITEagroindustrial, la Dirección Regional de Producción y la Cámara de Comercio de Ica, consolidando una alianza estratégica en favor del desarrollo de la industria vitivinícola peruana.</p>
+            <p>Durante esta edición se recibieron 104 muestras, representativas de las principales regiones productoras del Perú, las cuales fueron evaluadas bajo rigurosos estándares técnicos por un panel conformado por 12 catadores expertos. Gracias a este proceso de evaluación, más de 55 muestras fueron distinguidas con medallas de Oro, Plata y Bronce, reconociendo la calidad, innovación y esfuerzo de los productores nacionales y reafirmando el compromiso del concurso con la promoción de la cultura del vino peruano.</p>
             <div style={{ marginTop: '1.8rem' }}>
               <a
                 href="https://drive.google.com/file/d/17dJ-GdhQfTCcobqZHADSaCIS-d8voaWi/view?usp=sharing"
@@ -158,16 +160,18 @@ export const Historico: React.FC = () => {
             <div className="edicion-num">V</div>
             <div className="edicion-meta">
               <strong>Edición 2024</strong>
-              Ica · Ciudad de Ica
+              16–19 de octubre · Ciudad de Ica
             </div>
           </div>
           <div className="edicion-stats">
-            <div className="edicion-stat"><b>165</b><small>Muestras</small></div>
+            <div className="edicion-stat"><b>246</b><small>Muestras</small></div>
             <div className="edicion-stat"><b>12</b><small>Catadores</small></div>
             <div className="edicion-stat"><b>+70</b><small>Premiados</small></div>
           </div>
           <div className="edicion-body">
-            <p>La quinta edición del Concurso Nacional del Vino Peruano se llevó a cabo en la histórica ciudad vitivinícola de Ica, consolidando los logros y la evaluación técnica de los productores nacionales y promoviendo la mejora constante de la industria local.</p>
+            <p>Del 16 al 19 de octubre de 2024, la Cámara de Comercio, Industria y Turismo de Ica organizó el V Concurso Nacional del Vino Peruano en la ciudad de Ica, consolidando este certamen como el principal espacio de evaluación y reconocimiento de la excelencia vitivinícola del país. El concurso tuvo como objetivo promover la calidad de los vinos peruanos, impulsar la competitividad de las bodegas nacionales y fortalecer el posicionamiento de la industria vitivinícola a nivel nacional e internacional.</p>
+            <p>En esta quinta edición participaron 246 muestras de vino provenientes de diversas regiones productoras del Perú, las cuales fueron evaluadas mediante catas a ciegas por un panel de 12 jueces nacionales e internacionales, quienes aplicaron rigurosos estándares técnicos para garantizar un proceso de calificación objetivo, transparente e imparcial.</p>
+            <p>El certamen permitió reconocer a las mejores bodegas del país por la calidad de sus productos, destacando la diversidad, innovación y desarrollo alcanzado por la vitivinicultura peruana. Asimismo, reafirmó el compromiso de la Cámara de Comercio de Ica con la promoción de la cultura del vino y el fortalecimiento del sector, consolidando al Concurso Nacional del Vino Peruano como el máximo referente nacional para la evaluación y reconocimiento de los vinos peruanos.</p>
             <div style={{ marginTop: '1.8rem' }}>
               <a
                 href="https://drive.google.com/file/d/1BcJ5DVrAkGwGt9uzLGuz9vHMJ8XkLULu/view?usp=sharing"
@@ -199,7 +203,55 @@ export const Historico: React.FC = () => {
           <div className="edicion-body">
             <p>Del 24 al 27 de septiembre de 2025, el Concurso Nacional del Vino Peruano celebró su sexta edición en la ciudad de Tacna, marcando un nuevo hito en su proceso de descentralización y fortalecimiento de la industria vitivinícola nacional. Esta edición fue organizada por la Cámara de Comercio, Industria y Turismo de Ica, en alianza con el Gobierno Regional de Tacna, consolidando una articulación estratégica entre el sector público y privado para promover la calidad, competitividad y reconocimiento del vino peruano.</p>
             <p>El certamen reunió 174 muestras, representativas de las principales regiones vitivinícolas del país, las cuales fueron sometidas a una rigurosa evaluación técnica por un panel de 13 catadores expertos, nacionales e internacionales. Gracias a este proceso, más de 77 muestras fueron distinguidas con medallas de Oro, Plata y Bronce, reconociendo la excelencia de los vinos participantes y reafirmando al Concurso Nacional del Vino Peruano como el principal escenario de evaluación, promoción y valorización de la producción vitivinícola del Perú.</p>
-            <div style={{ marginTop: '1.8rem' }}>
+            
+            <div className="mesas-jurados-container" style={{ marginTop: '2.5rem', borderTop: '1px solid var(--line)', paddingTop: '2rem' }}>
+              <h4 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.25rem', color: 'var(--burgundy)', marginBottom: '1.2rem' }}>
+                Distribución de Jurados por Mesas (VI Edición)
+              </h4>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem', marginTop: '1rem' }}>
+                {/* Mesa 1 */}
+                <div style={{ background: '#fcf8f8', padding: '1.2rem', borderRadius: '6px', border: '1px solid var(--line)' }}>
+                  <h5 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.05rem', color: 'var(--burgundy)', marginBottom: '0.8rem', borderBottom: '2px solid var(--gold)', paddingBottom: '0.3rem', display: 'inline-block' }}>
+                    Mesa 1
+                  </h5>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.95rem', color: 'var(--text)', lineHeight: '1.8' }}>
+                    <li>Rodrigo Avilés</li>
+                    <li>Rosario Olivas</li>
+                    <li>Jonatan Serrano</li>
+                    <li>Mariana Aguilar</li>
+                  </ul>
+                </div>
+                
+                {/* Mesa 2 */}
+                <div style={{ background: '#fcf8f8', padding: '1.2rem', borderRadius: '6px', border: '1px solid var(--line)' }}>
+                  <h5 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.05rem', color: 'var(--burgundy)', marginBottom: '0.8rem', borderBottom: '2px solid var(--gold)', paddingBottom: '0.3rem', display: 'inline-block' }}>
+                    Mesa 2
+                  </h5>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.95rem', color: 'var(--text)', lineHeight: '1.8' }}>
+                    <li>Alexander Sanabria</li>
+                    <li>Claudio Martin</li>
+                    <li>Maria Elena Cárdenas</li>
+                    <li>Kelvin Chamorro</li>
+                  </ul>
+                </div>
+                
+                {/* Mesa 3 */}
+                <div style={{ background: '#fcf8f8', padding: '1.2rem', borderRadius: '6px', border: '1px solid var(--line)' }}>
+                  <h5 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.05rem', color: 'var(--burgundy)', marginBottom: '0.8rem', borderBottom: '2px solid var(--gold)', paddingBottom: '0.3rem', display: 'inline-block' }}>
+                    Mesa 3
+                  </h5>
+                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.95rem', color: 'var(--text)', lineHeight: '1.8' }}>
+                    <li>Jesús Castro</li>
+                    <li>Danny Villanueva</li>
+                    <li>Maria Alejandra Ramos</li>
+                    <li>Nuria Fernández</li>
+                    <li>Luis Hernández</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div style={{ marginTop: '2rem' }}>
               <a
                 href="https://drive.google.com/file/d/1EM5Oq2cA_U0HulYFTrAPTWQ_0qALXyUW/view?usp=sharing"
                 target="_blank"
