@@ -26,7 +26,7 @@ export const Concurso: React.FC = () => {
                 <p>Así nació el Concurso Nacional del Vino Peruano, con el propósito de impulsar la excelencia, promover la mejora continua y fortalecer la cultura vitivinícola del país.</p>
               </div>
               <div className="story-block-image">
-                <img src="https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp" alt="El Origen" />
+                <img src="https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2021-II.webp" alt="El Origen" />
               </div>
             </div>
 
@@ -43,7 +43,7 @@ export const Concurso: React.FC = () => {
                 <p>Más que otorgar medallas, el certamen se ha convertido en una herramienta para medir el progreso del sector, incentivar la innovación y reconocer el compromiso de quienes trabajan por elevar el nivel del vino peruano.</p>
               </div>
               <div className="story-block-image">
-                <img src="https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png" alt="La Evolución" />
+                <img src="https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2022-III.webp" alt="La Evolución" />
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export const Concurso: React.FC = () => {
                 <p>Pero la historia no podía detenerse allí.</p>
               </div>
               <div className="story-block-image">
-                <img src="https://concursovino.camaraica.org.pe/wp-content/uploads/2025/08/fondo-concurso-vino.png" alt="Expansión" />
+                <img src="https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2023-iv-2023-IV-3-scaled.webp" alt="Expansión" />
               </div>
             </div>
 
@@ -76,7 +76,7 @@ export const Concurso: React.FC = () => {
                 <p>Hoy, el Concurso Nacional del Vino Peruano es mucho más que una competencia. Es el reflejo de una industria que ha sabido evolucionar, una plataforma que preserva nuestro patrimonio vitivinícola y proyecta al Perú hacia el mundo.</p>
               </div>
               <div className="story-block-image">
-                <img src="https://camaraica.org.pe/wp-content/uploads/2024/09/391670310_791967542938942_2891257950320501127_n-1.webp" alt="Proyección Internacional" />
+                <img src="https://camaraica.org.pe/wp-content/uploads/2026/07/edicion-2024-v.webp" alt="Proyección Internacional" />
               </div>
             </div>
           </div>
@@ -186,11 +186,16 @@ export const Concurso: React.FC = () => {
               <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.3rem', marginBottom: '1.2rem', color: 'var(--text)' }}>
                 Instituciones Organizadoras
               </h3>
-              <div className="reveal" style={{ display: 'flex', justifyContent: 'center', marginBottom: '2rem' }}>
+              <div className="reveal" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', marginBottom: '2rem' }}>
                 <img
                   src="https://camaraica.org.pe/wp-content/uploads/2026/03/LOGO-FULL-COLOR-scaled.webp"
                   alt="Cámara de Comercio de Ica"
                   style={{ maxHeight: '110px', maxWidth: '100%', objectFit: 'contain' }}
+                />
+                <img
+                  src="https://camaraica.org.pe/wp-content/uploads/2026/07/2.webp"
+                  alt="Logo Concurso Nacional del Vino Peruano"
+                  style={{ maxHeight: '165px', maxWidth: '100%', objectFit: 'contain' }}
                 />
               </div>
               <h3 style={{ fontFamily: "'Playfair Display', serif", fontSize: '1.3rem', margin: '1.5rem 0 1rem', color: 'var(--text)' }}>

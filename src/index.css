@@ -1,8 +1,8 @@
 :root {
-  --cream: #f5f0e8;
-  --cream-dark: #ede6d6;
-  --burgundy: #6b1a28;
-  --burgundy-dark: #4a1019;
+  --cream: #fffbf5;
+  --cream-dark: #f5f5ef;
+  --burgundy: #820f12;
+  --burgundy-dark: #5e0003;
   --gold: #b8860b;
   --gold-light: #c9952a;
   --text: #2c2017;
@@ -2470,4 +2470,109 @@ footer.site-footer .footer-social-link:hover {
   bottom: 0;
   background: linear-gradient(to top, rgba(74, 16, 25, 0.25), transparent);
   pointer-events: none;
+}
+
+/* Sweep shine and golden glow animation for competencia cards */
+.competencia-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  animation: idleGlow 4s ease-in-out infinite;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.competencia-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 20%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.14);
+  transform: rotate(30deg);
+  pointer-events: none;
+  z-index: 5;
+  animation: periodicSweep 4s ease-in-out infinite;
+}
+
+.competencia-card:hover {
+  animation: none; /* Stop the idle border pulsation */
+  transform: translateY(-8px) scale(1.02);
+  border-color: var(--gold-light);
+  box-shadow: 0 12px 35px rgba(201, 149, 42, 0.45), 0 0 20px rgba(201, 149, 42, 0.3);
+}
+
+.competencia-card:hover::after {
+  animation: none; /* Stop the periodic loop */
+  left: 140%;
+  opacity: 1;
+  transition: all 0.65s ease-in-out;
+}
+
+/* Animations */
+@keyframes idleGlow {
+  0% {
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+  50% {
+    border-color: rgba(201, 149, 42, 0.3); /* Soft gold border pulse */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 0 10px rgba(201, 149, 42, 0.2); /* Soft gold shadow pulse */
+  }
+  100% {
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  }
+}
+
+@keyframes periodicSweep {
+  0% {
+    left: -60%;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  45% {
+    left: 140%;
+    opacity: 0;
+  }
+  100% {
+    left: 140%;
+    opacity: 0;
+  }
+}
+
+/* Infinite marquee banner bridging sections */
+.marquee-container {
+  position: absolute;
+  top: -3.8rem; /* Bridges the cream and burgundy section */
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.marquee-content {
+  display: inline-block;
+  font-family: "'Playfair Display', serif";
+  font-size: clamp(5rem, 11vw, 8rem);
+  font-weight: 900;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.05); /* White semi-transparent */
+  letter-spacing: 0.1em;
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

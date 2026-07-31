@@ -109,6 +109,7 @@ export const Contacto: React.FC = () => {
               <div>
                 <strong>Sede organizadora:</strong><br />
                 Cámara de Comercio de Ica<br />
+                Urb. Sr. de Luren, C. Pedro Olaechea, 285<br />
                 Ica, Perú
               </div>
             </div>
