@@ -273,6 +273,13 @@ export const Concurso: React.FC = () => {
                   <div className="tl-place">Tacna</div>
                   <div className="tl-venue">Ciudad de Tacna</div>
                 </div>
+                <div className="tl-item">
+                  <div className="tl-dot"></div>
+                  <div className="tl-year">2026</div>
+                  <div className="tl-edition">VII Concurso Nacional del Vino Peruano</div>
+                  <div className="tl-place">Chincha</div>
+                  <div className="tl-venue">Chincha</div>
+                </div>
               </div>
             </div>
           </div>
