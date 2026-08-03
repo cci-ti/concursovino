@@ -328,10 +328,13 @@ export const Inicio: React.FC = () => {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.8rem' }}>
 
             {/* Card 1 */}
-            <div
+            <Link
+              to="/"
               className="reveal competencia-card"
               style={{
-                height: '320px'
+                height: '320px',
+                display: 'block',
+                textDecoration: 'none'
               }}
             >
               <img
@@ -355,7 +358,7 @@ export const Inicio: React.FC = () => {
                   CONCURSO NACIONAL DEL VINO PERUANO
                 </h4>
               </div>
-            </div>
+            </Link>
 
             {/* Card 2 */}
             <div
@@ -388,10 +391,13 @@ export const Inicio: React.FC = () => {
             </div>
 
             {/* Card 3 */}
-            <div
+            <Link
+              to="/concurso-etiquetas"
               className="reveal competencia-card"
               style={{
-                height: '320px'
+                height: '320px',
+                display: 'block',
+                textDecoration: 'none'
               }}
             >
               <img
@@ -415,7 +421,7 @@ export const Inicio: React.FC = () => {
                   CONCURSO DE ETIQUETAS
                 </h4>
               </div>
-            </div>
+            </Link>
 
             {/* Card 4 */}
             <div

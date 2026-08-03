@@ -9,6 +9,8 @@ import { Historico } from './pages/Historico';
 import { Galeria } from './pages/Galeria';
 import { Contacto } from './pages/Contacto';
 import { Jueces } from './pages/Jueces';
+import { Etiquetas } from './pages/Etiquetas';
+import { EtiquetasEdiciones } from './pages/EtiquetasEdiciones';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path="galeria" element={<Galeria />} />
           <Route path="contacto" element={<Contacto />} />
           <Route path="jueces" element={<Jueces />} />
+          <Route path="concurso-etiquetas" element={<Etiquetas />} />
+          <Route path="concurso-etiquetas/ediciones" element={<EtiquetasEdiciones />} />
         </Route>
       </Routes>
     </Router>

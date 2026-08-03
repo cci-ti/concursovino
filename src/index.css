@@ -2576,3 +2576,55 @@ footer.site-footer .footer-social-link:hover {
     transform: translateX(-100%);
   }
 }
+
+/* Responsive Utilities */
+@media (max-width: 768px) {
+  .d-none-mobile {
+    display: none !important;
+  }
+}
+
+/* Animation utilities for floating figures */
+@keyframes floatSlow {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+@keyframes floatGentle {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(-2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.float-slow {
+  animation: floatSlow 6s ease-in-out infinite;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.float-slow:hover {
+  transform: scale(1.08) rotate(4deg) !important;
+  filter: drop-shadow(0 10px 25px rgba(255, 255, 255, 0.2));
+}
+
+.float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.float-gentle:hover {
+  transform: scale(1.08) rotate(-4deg) !important;
+  filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.12));
+}
