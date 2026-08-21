@@ -16,7 +16,7 @@ export const Reglamento: React.FC = () => {
             </div>
             <h4>Reglamento General</h4>
             <p>Normas y condiciones generales de participación y juzgamiento en el Concurso Nacional del Vino Peruano.</p>
-            <a href="#" className="btn-primary" style={{ display: 'inline-block', marginTop: '1.5rem', fontSize: '.78rem', padding: '.7rem 1.4rem' }}>
+            <a href="https://drive.google.com/file/d/1m4RW7gyokCR3dDmQwjmmpmCPZZ0UiY9E/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-block', marginTop: '1.5rem', fontSize: '.78rem', padding: '.7rem 1.4rem' }}>
               Descargar PDF
             </a>
           </div>
