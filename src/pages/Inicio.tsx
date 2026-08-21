@@ -23,8 +23,10 @@ export const Inicio: React.FC = () => {
         }}
       >
         {/* Badge: Inscripciones abiertas */}
-        <Link
-          to="/inscripcion"
+        <a
+          href="https://concursovinos.icaconvention.com/inscripcion/fichadigital.html"
+          target="_blank"
+          rel="noopener noreferrer"
           style={{
             background: '#fff',
             color: 'var(--burgundy-dark)',
@@ -52,7 +54,7 @@ export const Inicio: React.FC = () => {
           className="reveal"
         >
           Inscripciones abiertas
-        </Link>
+        </a>
 
         {/* Subtitle 1: II Concurso Internacional... */}
         <span
@@ -163,8 +165,10 @@ export const Inicio: React.FC = () => {
                   Octubre, 20 al 24
                 </span>
               </div>
-              <Link
-                to="/inscripcion"
+              <a
+                href="https://concursovinos.icaconvention.com/inscripcion/fichadigital.html"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary"
                 style={{
                   background: 'var(--burgundy-dark)',
@@ -183,7 +187,7 @@ export const Inicio: React.FC = () => {
                 }}
               >
                 Inscribir mi vino
-              </Link>
+              </a>
             </div>
 
             {/* Column 2: Location & Button */}
@@ -196,8 +200,10 @@ export const Inicio: React.FC = () => {
                   <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0Z" /><circle cx="12" cy="10" r="3" />
                 </svg>
               </div>
-              <Link
-                to="/reglamento"
+              <a
+                href="https://drive.google.com/file/d/1m4RW7gyokCR3dDmQwjmmpmCPZZ0UiY9E/view"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary"
                 style={{
                   background: 'var(--burgundy-dark)',
@@ -215,8 +221,8 @@ export const Inicio: React.FC = () => {
                   display: 'inline-block'
                 }}
               >
-                Conoce las bases
-              </Link>
+                Conoce el reglamento
+              </a>
             </div>
           </div>
         </div>
@@ -510,8 +516,10 @@ export const Inicio: React.FC = () => {
             Las inscripciones cierran el 15 de Octubre de 2026.
           </p>
           <div className="reveal">
-            <Link
-              to="/inscripcion"
+            <a
+              href="https://concursovinos.icaconvention.com/inscripcion/fichadigital.html"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-primary"
               style={{
                 background: 'var(--burgundy-dark)',
@@ -529,7 +537,7 @@ export const Inicio: React.FC = () => {
               }}
             >
               Inscripciones
-            </Link>
+            </a>
           </div>
         </div>
       </section>
