@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, ClipboardList, Edit } from 'lucide-react';
+import { FileText, Edit } from 'lucide-react';
 
 export const Reglamento: React.FC = () => {
   return (
@@ -17,16 +17,6 @@ export const Reglamento: React.FC = () => {
             <h4>Reglamento General</h4>
             <p>Normas y condiciones generales de participación y juzgamiento en el Concurso Nacional del Vino Peruano.</p>
             <a href="https://drive.google.com/file/d/1m4RW7gyokCR3dDmQwjmmpmCPZZ0UiY9E/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ display: 'inline-block', marginTop: '1.5rem', fontSize: '.78rem', padding: '.7rem 1.4rem' }}>
-              Descargar PDF
-            </a>
-          </div>
-          <div className="por-que-card">
-            <div className="icon">
-              <ClipboardList size={36} strokeWidth={1.5} />
-            </div>
-            <h4>Bases del Concurso</h4>
-            <p>Detalle de categorías aceptadas, variedades de uva patrimoniales y nobles, y criterios de evaluación técnica.</p>
-            <a href="#" className="btn-primary" style={{ display: 'inline-block', marginTop: '1.5rem', fontSize: '.78rem', padding: '.7rem 1.4rem' }}>
               Descargar PDF
             </a>
           </div>

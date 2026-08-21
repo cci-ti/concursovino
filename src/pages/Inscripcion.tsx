@@ -56,8 +56,7 @@ export const Inscripcion: React.FC = () => {
 
         <div className="inscripcion-btns">
           <Link to="/contacto" className="btn-primary">Inscribirme</Link>
-          <Link to="/reglamento" className="btn-outline">Descargar ficha de inscripción</Link>
-          <Link to="/reglamento" className="btn-outline">Consultar bases técnicas</Link>
+          <a href="https://drive.google.com/file/d/1Um7b327Di1hfKQqi3RGK8lG5_wc4uBc_/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline">Descargar ficha de inscripción</a>
         </div>
       </div>
     </section>
