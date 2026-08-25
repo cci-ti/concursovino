@@ -335,7 +335,7 @@ export const Inicio: React.FC = () => {
 
             {/* Card 1 */}
             <Link
-              to="/"
+              to="/historico"
               className="reveal competencia-card"
               style={{
                 height: '320px',
