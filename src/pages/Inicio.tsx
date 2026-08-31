@@ -201,7 +201,7 @@ export const Inicio: React.FC = () => {
                 </svg>
               </div>
               <a
-                href="https://drive.google.com/file/d/1m4RW7gyokCR3dDmQwjmmpmCPZZ0UiY9E/view"
+                href="https://drive.google.com/file/d/1-kucwyDT43F3ESPpU-OFTvKSvcak_18u/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
